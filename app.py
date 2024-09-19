@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello Dominic!'
 
-@app.route('/<name>')
+@app.route('/name/<name>')
 def show_name(name):
     # show the user profile for that user
     return f'Hello {escape(username)}'
